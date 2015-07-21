@@ -2,6 +2,8 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 /* line 5, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,9 +69,105 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 106, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 14, ../sass/_global.scss */
+body {
+  font-family: Raleway;
+}
+
+/* line 3, ../sass/_nav.scss */
+.navbar-default {
+  background-color: #000;
+  border-color: transparent;
+}
+
+/* line 8, ../sass/_nav.scss */
+.navbar-brand {
+  font-size: 1.625em;
+  line-height: 1.84615em;
+  padding: 0 10px;
+}
+
+/* line 13, ../sass/_nav.scss */
+.dropdown-toggle {
+  font-size: 1.375em;
+  line-height: 2.18182em;
+  color: white;
+}
+
+/* line 18, ../sass/_nav.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #bbb;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+/* line 21, ../sass/_nav.scss */
+.navbar-default .navbar-nav > li > a:hover {
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  color: white;
+}
+
+/* line 29, ../sass/_nav.scss */
+.navbar-nav > li > .dropdown-menu {
+  margin-top: -1px;
+}
+
+/* line 35, ../sass/_nav.scss */
+.dropdown-menu {
+  background-color: #444;
+}
+/* line 38, ../sass/_nav.scss */
+.dropdown-menu > li > a {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  text-align: center;
+  color: red;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+/* line 43, ../sass/_nav.scss */
+.dropdown-menu > li > a:hover {
+  color: blue;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
 /* line 1, ../sass/_homepage.scss */
+.full-page-container {
+  height: 100vh;
+}
+
+/* line 5, ../sass/_homepage.scss */
 .landing-bg {
   background: url("../img/starsbg.jpg") center no-repeat;
   background-size: cover;
-  height: 100vh;
+}
+
+/* line 10, ../sass/_homepage.scss */
+.home-page-1 {
+  background-color: black;
+}
+
+/* line 14, ../sass/_homepage.scss */
+.home-page-2 {
+  background-color: white;
+}
+
+/* line 18, ../sass/_homepage.scss */
+.home-page-3 {
+  background-color: #ccc;
 }

@@ -1,0 +1,16 @@
+@import "compass/typography/vertical_rhythm";
+@import "color";
+@import "fonts";
+
+// Global Variables
+
+$base-font-size: 16px !default;
+$base-line-height: 24px;
+@include establish-baseline($base-font-size);
+
+// Main Styles
+
+
+body {
+	font-family: Raleway;
+}

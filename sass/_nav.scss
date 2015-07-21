@@ -1,1 +1,48 @@
-.nav {}
+@import "variables";
+
+.navbar-default {
+	background-color: #000;
+	border-color: transparent;
+}
+
+.navbar-brand {
+	@include adjust-font-size-to(26px);
+	padding: 0 10px;
+}
+
+.dropdown-toggle {
+	@include adjust-font-size-to(22px);
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #bbb;
+	@include transition($trans-color);
+	&:hover {
+		@include transition($trans-color);
+		color: white;
+	}
+}
+
+// Fixing pixel issue when border is removed
+
+.navbar-nav>li>.dropdown-menu {
+	margin-top: -1px;
+}
+
+// Adjustment for dropdown menu items
+
+.dropdown-menu {
+	background-color: #444;
+	
+	>li>a {
+	@include adjust-font-size-to(18px);
+	text-align: center;
+	color: red;
+	@include transition($trans-color);
+	&:hover {
+		color: blue;
+		@include transition($trans-color);
+		}
+	}
+}

@@ -1,0 +1,3 @@
+Directory:
+
+cd "My Documents"/github/JeremiahNyman.com

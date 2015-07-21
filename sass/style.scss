@@ -12,6 +12,13 @@
 @import "compass/utilities";
 @import "compass/layout";
 
+// Sitewide Settings
+@import "global";
+@import "color";
+@import "fonts";
+@import "variables";
+
+
 // Pages
 @import "nav";
 @import "homepage";

@@ -1,5 +1,20 @@
+.full-page-container	{
+	height: 100vh;
+}
+
 .landing-bg {
 	background: url('../img/starsbg.jpg') center no-repeat;
 	background-size: cover;
-	height: 100vh;
+}
+
+.home-page-1 {
+	background-color: black;
+}
+
+.home-page-2 {
+	background-color: white;
+}
+
+.home-page-3 {
+	background-color: #ccc;
 }

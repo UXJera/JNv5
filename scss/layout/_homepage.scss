@@ -1,0 +1,32 @@
+@mixin fullbg {
+	min-height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.landing-bg {
+	background: url('../img/cornsky-1920.jpg') center no-repeat;
+	@include fullbg;
+}
+
+.home-page-1 {
+	//background: url('../img/starsbg.jpg') center no-repeat;
+	background: #fff;
+	@include fullbg;
+}
+
+.home-page-2 {
+	background: url('../img/star-night-1920.jpg') center no-repeat;
+	@include fullbg;
+}
+
+.home-page-3 {
+	//background: url('../img/star-night-1920.jpg') center no-repeat;
+	background: black;
+	@include fullbg;
+}
+
+.home-page-4 {
+	background: url('../img/ferris-wheel.jpg') center no-repeat;	
+	@include fullbg;
+}

@@ -1,10 +1,8 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,700);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
-/* line 5, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+/* line 5, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,81 +24,161 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 106, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* Base Styles -------------------- */
+/* line 106, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 100%;
   line-height: 1.5em;
 }
 
-/* line 14, ../sass/_global.scss */
-body {
-  font-family: Raleway;
+/* line 11, ../scss/base/_base.scss */
+* {
+  box-sizing: border-box;
 }
 
-/* line 3, ../sass/_nav.scss */
+/* line 15, ../scss/base/_base.scss */
+body {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #878787;
+  margin: 0;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+}
+
+/* line 21, ../scss/base/_base.scss */
+h1,
+h2 {
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+}
+
+/* line 26, ../scss/base/_base.scss */
+h2 {
+  font-size: 3.3125em;
+  line-height: 1.1;
+  font-weight: normal;
+  margin: 0 0 .5em;
+}
+
+/* line 31, ../scss/base/_base.scss */
+h3 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  color: #48525c;
+  margin-bottom: 1.7em;
+}
+
+/* line 36, ../scss/base/_base.scss */
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* line 42, ../scss/base/_base.scss */
+ul,
+ol {
+  margin: 30px 0;
+}
+
+/* line 47, ../scss/base/_base.scss */
+li {
+  margin-bottom: 10px;
+}
+
+/* Pseudo-classes ------------------ */
+/* line 54, ../scss/base/_base.scss */
+a:link {
+  color: #ffa949;
+  text-decoration: none;
+}
+/* line 58, ../scss/base/_base.scss */
+a:visited {
+  color: #add8e6;
+}
+/* line 61, ../scss/base/_base.scss */
+a:hover {
+  color: rgba(255, 169, 73, 0.5);
+}
+
+/* line 1, ../scss/layout/_nav.scss */
+nav {
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+}
+
+/* line 5, ../scss/layout/_nav.scss */
 .navbar-default {
   background-color: #000;
   border-color: transparent;
 }
 
-/* line 8, ../sass/_nav.scss */
+/* line 10, ../scss/layout/_nav.scss */
+.container-fluid.navbar-fluid {
+  margin-bottom: -10px;
+}
+
+/* line 14, ../scss/layout/_nav.scss */
 .navbar-brand {
   font-size: 1.625em;
   line-height: 1.84615em;
   padding: 0 10px;
 }
 
-/* line 13, ../sass/_nav.scss */
+/* line 19, ../scss/layout/_nav.scss */
+.navbar-collapse {
+  padding: 0px;
+}
+
+/* line 23, ../scss/layout/_nav.scss */
 .dropdown-toggle {
   font-size: 1.375em;
   line-height: 2.18182em;
   color: white;
 }
 
-/* line 18, ../sass/_nav.scss */
+/* line 28, ../scss/layout/_nav.scss */
 .navbar-default .navbar-nav > li > a {
   color: #bbb;
   -moz-transition: color 0.5s;
@@ -108,7 +186,7 @@ body {
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
-/* line 21, ../sass/_nav.scss */
+/* line 31, ../scss/layout/_nav.scss */
 .navbar-default .navbar-nav > li > a:hover {
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
@@ -117,57 +195,65 @@ body {
   color: white;
 }
 
-/* line 29, ../sass/_nav.scss */
+/* line 39, ../scss/layout/_nav.scss */
 .navbar-nav > li > .dropdown-menu {
   margin-top: -1px;
 }
 
-/* line 35, ../sass/_nav.scss */
-.dropdown-menu {
-  background-color: #444;
-}
-/* line 38, ../sass/_nav.scss */
+/* line 47, ../scss/layout/_nav.scss */
 .dropdown-menu > li > a {
   font-size: 1.125em;
   line-height: 1.33333em;
   text-align: center;
-  color: red;
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
-/* line 43, ../sass/_nav.scss */
+/* line 51, ../scss/layout/_nav.scss */
 .dropdown-menu > li > a:hover {
-  color: blue;
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 
-/* line 1, ../sass/_homepage.scss */
-.full-page-container {
-  height: 100vh;
-}
-
-/* line 5, ../sass/_homepage.scss */
+/* line 7, ../scss/layout/_homepage.scss */
 .landing-bg {
-  background: url("../img/starsbg.jpg") center no-repeat;
+  background: url("../img/cornsky-1920.jpg") center no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 10, ../sass/_homepage.scss */
+/* line 12, ../scss/layout/_homepage.scss */
 .home-page-1 {
-  background-color: black;
+  background: #fff;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-/* line 14, ../sass/_homepage.scss */
+/* line 18, ../scss/layout/_homepage.scss */
 .home-page-2 {
-  background-color: white;
+  background: url("../img/star-night-1920.jpg") center no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-/* line 18, ../sass/_homepage.scss */
+/* line 23, ../scss/layout/_homepage.scss */
 .home-page-3 {
-  background-color: #ccc;
+  background: black;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* line 29, ../scss/layout/_homepage.scss */
+.home-page-4 {
+  background: url("../img/ferris-wheel.jpg") center no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
 }

@@ -1,0 +1,22 @@
+//	Bootstrap Alterations	//
+
+//	Navbar alterations	//
+
+.navbar-collapse {
+	padding: 0px;
+}
+
+.container-fluid.navbar-fluid {
+	margin-bottom: -10px;
+}
+
+.navbar-default {
+	background-color: #000;
+	border-color: transparent;
+}
+
+// Fixing pixel issue when border is removed	//
+
+.navbar-nav>li>.dropdown-menu {
+	margin-top: -1px;
+}

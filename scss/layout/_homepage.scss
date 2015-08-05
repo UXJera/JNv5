@@ -1,11 +1,9 @@
-@mixin fullbg {
-	min-height: 100vh;
-	background-attachment: fixed;
-	background-size: cover;
-}
+@mixin fullbg { min-height: 100vh;	background-attachment: fixed;	background-size: cover;}
+
+/*	Full page formatting */
 
 .landing-bg {
-	background: url('../img/cornsky-1920.jpg') center no-repeat;
+	background: url('../img/cornsky-1920.jpg') center no-repeat; //
 	@include fullbg;
 }
 
@@ -29,4 +27,62 @@
 .home-page-4 {
 	background: url('../img/ferris-wheel.jpg') center no-repeat;	
 	@include fullbg;
+}
+
+/*	Individual element formatting	*/
+
+.landing-message {
+	text-align: center;
+	padding-top: 15%;
+	@media screen and (max-width: 1100px) {
+		padding-top: 20%;
+	}
+	@media screen and (max-width: 800px) {
+		padding-top: 33%;
+	}
+	h2, p {
+		color: black;
+	}
+	h2 {
+		@include adjust-font-size-to(72px);
+		@media screen and (max-width: 800px) {
+			@include adjust-font-size-to(42px);
+		}
+	}
+	p {
+		margin-bottom: 1.5%;
+	}
+	button {
+		background-color: black;
+		border: 2px solid orange;
+		border-radius: 10px;
+		a {
+			@include trans-color;
+			@include adjust-font-size-to(24px);
+			padding: 10px;
+			&:visited{ text-decoration: none;}
+		}
+	}
+}
+
+/*	Content Area 1 */
+
+.content-box {
+	padding-top: 10px;
+	text-align:center;
+	h3 {
+		color: green; 
+		@include adjust-font-size-to(28px);
+	}
+	li {
+		text-align: left;
+	}
+	img {
+		border-radius: 50%;
+		width: 150px;
+	}
+}
+
+#main {
+	padding-top: 50px;
 }

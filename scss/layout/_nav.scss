@@ -2,22 +2,13 @@ nav {
 	font-family: $stack-roboto;
 }
 
-.navbar-default {
-	background-color: #000;
-	border-color: transparent;
-}
-
-.container-fluid.navbar-fluid {
-	margin-bottom: -10px;
-}
-
-.navbar-brand {
+.navbar-default .navbar-brand {
+	@include trans-color;
 	@include adjust-font-size-to(26px);
 	padding: 0 10px;
-}
+	color: #bbb;
 
-.navbar-collapse {
-	padding: 0px;
+	&:hover { color: white;}
 }
 
 .dropdown-toggle {
@@ -27,29 +18,22 @@ nav {
 
 .navbar-default .navbar-nav>li>a {
 	color: #bbb;
-	@include transition($trans-color);
+	@include trans-color;
 	&:hover {
-		@include transition($trans-color);
+		@include trans-color;
 		color: white;
 	}
 }
 
-// Fixing pixel issue when border is removed
-
-.navbar-nav>li>.dropdown-menu {
-	margin-top: -1px;
-}
-
-// Adjustment for dropdown menu items
+// Adjustment for dropdown menu items	//
 
 .dropdown-menu {
-	
 	>li>a {
 	@include adjust-font-size-to(18px);
 	text-align: center;
-	@include transition($trans-color);
+	@include trans-color;
 	&:hover {
-		@include transition($trans-color);
+		@include trans-color;
 		}
 	}
 }

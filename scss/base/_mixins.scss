@@ -19,11 +19,16 @@
   color: $color;
 }
 
+@mixin hide-text{
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
 
+//	Transitions
 
-
-
-
+@mixin trans-color { transition: color 0.5s;}
+@mixin trans-bg { transition: background 0.5s; }
 
 
 

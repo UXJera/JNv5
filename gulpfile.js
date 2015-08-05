@@ -45,10 +45,6 @@ gulp.task('compass', function() {
     .pipe(gulp.dest('app/assets/temp'));
 });
 
-gulp.task('watchSass', function() {
-		gulp.watch('scss/**/*.scss', ['compileSass']);
-});
-
 gulp.task('clean', function() {
 	del(['dist', 'css/application.css*', 'js/app*.js*']); // Deletes the dist folder and those files
 });

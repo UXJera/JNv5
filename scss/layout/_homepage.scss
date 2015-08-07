@@ -1,3 +1,4 @@
+@import "components/color";
 @mixin fullbg { min-height: 100vh;	background-attachment: fixed;	background-size: cover;}
 
 /*	Full page formatting */
@@ -14,7 +15,7 @@
 }
 
 .home-page-2 {
-	background: url('../img/star-night-1920.jpg') center no-repeat;
+	background: url('../img/ferris-wheel.jpg') center no-repeat;
 	@include fullbg;
 }
 
@@ -25,63 +26,140 @@
 }
 
 .home-page-4 {
-	background: url('../img/ferris-wheel.jpg') center no-repeat;	
+	background: url('../img/star-night-1920.jpg') center no-repeat;	
 	@include fullbg;
 }
 
-/*	Individual element formatting	*/
+//	Landing Area	//
 
-.landing-message {
-	text-align: center;
+.landing-message { 
+	text-align: center; 
 	padding-top: 15%;
-	@media screen and (max-width: 1100px) {
-		padding-top: 20%;
-	}
-	@media screen and (max-width: 800px) {
-		padding-top: 33%;
-	}
-	h2, p {
-		color: black;
-	}
-	h2 {
-		@include adjust-font-size-to(72px);
-		@media screen and (max-width: 800px) {
-			@include adjust-font-size-to(42px);
+	@media screen and (max-width: 1100px) {	
+		padding-top: 20%;	}
+	@media screen and (max-width: 800px) { 	
+		padding-top: 33%;	}
+	h2, p { color: black; }
+	h2 {	@include adjust-font-size-to(72px);
+		@media screen and (max-width: 800px) { 
+			@include adjust-font-size-to(42px); 
 		}
 	}
-	p {
+	p { 
 		margin-bottom: 1.5%;
 	}
 	button {
-		background-color: black;
-		border: 2px solid orange;
+		background-color: $blue900;
+		@include trans-bg;
+		border: 2px solid $blue900;
 		border-radius: 10px;
+		&:hover { 
+			@include trans-bg;
+			background-color: $blue100;
+		}
 		a {
+			color: $blue100;
 			@include trans-color;
 			@include adjust-font-size-to(24px);
 			padding: 10px;
-			&:visited{ text-decoration: none;}
+			&:visited{	text-decoration: none;}
+			&:hover {	color: $blue900;}
 		}
 	}
 }
 
-/*	Content Area 1 */
+//	Content Area 1 //
 
 .content-box {
 	padding-top: 10px;
 	text-align:center;
 	h3 {
-		color: green; 
+		margin-bottom: 10px;
+		color: $blue900; 
+		@include adjust-font-size-to(32px);
+		@media screen and (max-width: 800px) {
+			@include adjust-font-size-to(24px);
+		}
+	}
+	h4 {
+		margin-top: 10px;
+		color: $blue900;
+		font-weight: 700;
 		@include adjust-font-size-to(28px);
+		@media screen and (max-width: 800px) {
+			@include adjust-font-size-to(24px);
+		}
 	}
 	li {
 		text-align: left;
+		@media screen and (max-width: 986px) {
+			text-align: center;
+		}
 	}
 	img {
 		border-radius: 50%;
 		width: 150px;
 	}
+	a {
+		color: $blue400;
+		@include trans-color;
+		&:hover {
+			color: $blue900;
+			@include trans-color;
+		}
+	}
 }
+
+.always-right li{
+	text-align: right;
+	@media screen and (max-width: 986px) {
+		text-align: center;
+	}
+}
+
+.content-list {
+	li, a { 
+		margin: 20px 0; 
+	}
+	li {
+		font-family: $stack-roboto;
+		@include adjust-font-size-to(22px);
+	}
+}
+
+.page-1-box {
+	border-top: 1px solid $bluegrey300;
+}
+
+.circle-k {
+	margin: -7px 10px;
+	display: inline-block;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	background-color: $blue500;
+	@include trans-bg;
+	&:hover {
+		background-color: $blue900;
+		@include trans-bg;
+	}
+	@media screen and (max-width: 986px) {
+		display: none;
+	}
+}
+
+//	Content Area 2	//
+
+.contact-box {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-top: 15%;
+	padding: 20px;
+	background-color: $blue900;
+	p {
+		color: white;
+	}
+}	
 
 #main {
 	padding-top: 50px;

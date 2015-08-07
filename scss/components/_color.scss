@@ -1,19 +1,23 @@
 // Copy from old website
 
-$lightblue: #ADEBFF; // #ADEBFF  #CFF7FF
-$baseblue: #33CCFF; // #6FE8FF  #33CCFF
-$midblue: 	#1A6680; // #387480 	#1F7A99
-$darkblue: #0A2933; // 043640 	 #162E33
-$faint: #D6F5FF; // #D6F5FF
-$orange: #FF845B; // #FF6633 #FF7156
-$bg-dark: url("../img/swirl-bg.jpg");
-$bg-faint: url("../img/faint-bg.jpg");
-$value1: #FF0000;  //url("../img/redhex.jpg");
-$value2: #FF4719;// redorange;
-$value3: #FF9900 ;// orange;
-$value4: #FFCC00 ;// gold;
-$value5: #CCFF66; // green;
-$value6: #66FF66;// lightgreen;
-$value7: #3399FF ;// lightblue;
-$value8: #0066FF ;// blue;
-$value9: #0000FF ;// darkblue;
+$blue100: #BBDEFB; //rgb(187,222,251)
+$blue200: #90CAF9; //rgb(144,202,249)
+$blue300: #64B5F6; //rgb(100,181,246)
+$blue400: #42A5F5; //rgb(66,165,245)
+$blue500: #03A9F4; //rgb(33,150,243)
+$blue600: #039BE5; //rgb(30,136,229)
+$blue700: #1976D2; //rgb(25,118,210)
+$blue800: #0277BD; //rgb(21,101,192)
+$blue900: #0D47A1; //rgb(13,71,161)
+
+$indigo300: #7986CB; //rgb(121,134,203)
+$indigo600: #3949AB; //rgb(57,73,171)
+$indigo900: #1A237E; //rgb(26,35,126)
+
+$lightblue100: #B2EBF2; //rgb(179,229,252)
+$lightblue400: #29B6F6; //rgb(41,182,246)
+
+$bluegrey100: #CFD8DC; //rgb(207,216,220)
+$bluegrey300: #90A4AE; //rgb(144,164,174)
+$bluegrey500: #607D8B; //rgb(96,125,139)
+$bluegrey700: #455A64; //rgb(69,90,100)

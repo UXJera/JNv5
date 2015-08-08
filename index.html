@@ -5,6 +5,9 @@
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="This is the portfolio website for Jeremiah Nyman showcasing a variety of research studies and digital designs.">
+	<meta name="author" content="Jeremiah Nyman">
+	<meta name="keywords" content="UX,Jera,Jeremiah Nyman,Nyman, User Experience,Portfolio,WSU,Wichita State,Human Factors,UX Designer,UX Research,KSN,Wichita,Kansas">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css"/>
 	<title> Welcome | Jeremiah Nyman </title>
@@ -55,16 +58,18 @@
 		</div>
 	</nav>
 
-	<div class="col-md-12 landing-message">
-		<h2>Hello! Thank you for visiting!</h2>
-		<p>Howdy!</p>
+	<div class="landing-message">
+		<div class="opacity-bg">
+			<h2>Hello! Thank you for visiting!</h2>
+			<p>Howdy!</p>
+		</div>
 		<button><a href="#main">Find out more</a></button>
 	</div>
 	
 </div>
-
-
-<div class="container-fluid home-page-1" id="main">
+<!-- Main Page 1 -->
+<div class="anchor" id="main"></div>
+<div class="container-fluid home-page-1">
 	<div class="container">
 		<div  class="row content-box">
 			<div class="col-md-6 col-md-offset-3">
@@ -76,19 +81,75 @@
 		<div  class="row content-box">
 			<div class="col-md-6 page-1-box">
 				<h4>Research and Analytic projects</h4>
-					<!--div class="row box-images">
-						<div class="col-xs-6 col-md-3 col-md-offset-2">
-							<img src="img/jnheadshot.jpg" alt="Research Picture" />
+				
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				 
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="itemOne">
+						<h5 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							Can video games improve your attention?
+							</a>
+						</h5>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemOne">
+						<div class="panel-body">
+							<div class="row">
+								<img src="img/jnheadshot.jpg">
+							</div>
+							<div class="row"><p>
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. </p>
+							</div>
 						</div>
-						<div class="col-xs-6 col-md-3 col-md-offset-2">
-							<img src="img/jnheadshot.jpg" alt="Research Picture" />
+					</div>
+				</div>
+			  
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="itemTwo">
+						<h5 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+							Modernizing a college's social media
+							</a>
+						</h5>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemTwo">
+						<div class="panel-body">
+							<div class="row">
+								<img src="img/jnheadshot.jpg">
+							</div>
+							<div class="row"><p>
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. </p>
+							</div>
 						</div>
-					</div-->
-					<ul class="content-list">
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="itemThree">
+						<h5 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							The importance of Analytics in Professional Gaming
+							</a>
+						</h5>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemThree">
+						<div class="panel-body">
+							<div class="row">
+								<img src="img/jnheadshot.jpg">
+							</div>
+							<div class="row"><p>
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>		
+
+					<!--ul class="content-list">
 						<li><a href="#"><span class="circle-k"></span>Can video games improve your attention?</a></li>
 						<li><a href="#"><span class="circle-k"></span>Modernizing a college's social media</a></li>
 						<li><a href="#"><span class="circle-k"></span>The importance of Analytics in Professional Gaming</a></li>
-					</ul>
+					</ul-->
 			</div>
 			<div class="col-md-6 page-1-box">
 				<h4>Designs and Portfolio Web Content</h4>
@@ -99,27 +160,125 @@
 						<div class="col-xs-6 col-md-3 col-md-offset-2">
 							<img src="img/jnheadshot.jpg" alt="Research Picture" />
 						</div>
-					</div-->			
-					<ul class="content-list always-right">
+					</div-->
+
+					<div class="panel-group" id="accordionTwo" role="tablist" aria-multiselectable="true">
+					 
+					 <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="itemFour">
+						  <h5 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								Sketches and Digital Designs
+							</a>
+						  </h5>
+						</div>
+						
+						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemFour">
+						  <div class="panel-body">
+							<div class="row">
+								<img src="img/jnheadshot.jpg">
+							</div>
+							<div class="row"><p>
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. </p>
+							</div>
+						  </div>
+					   </div>
+					 </div>
+					  
+					  
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="itemFive">
+						  <h5 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+							  Premium Web Content (from KSN.com)
+							</a>
+						  </h5>
+						</div>
+						<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemFive">
+						  <div class="panel-body">
+							<div class="row">
+								<img src="img/jnheadshot.jpg">
+							</div>
+							<div class="row"><p>
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. </p>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="itemSix">
+						  <h5 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+							  My thoughts on User Experience
+							</a>
+						  </h5>
+						</div>
+						<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemSix">
+						  <div class="panel-body">
+							<div class="row">
+								<img src="img/jnheadshot.jpg">
+							</div>
+							<div class="row"><p>
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. </p>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					<!--ul class="content-list always-right">
 						<li><a href="#">Sketches and Digital Designs<span class="circle-k"></span></a></li>
 						<li><a href="#">Premium Web Content (from KSN.com)<span class="circle-k"></span></a></li>
 						<li><a href="#">My thoughts on User Experience<span class="circle-k"></span></a></li>
-					</ul>
+					</ul-->
 			</div>
 		</div>
 	</div>
+
+	
 </div>
+
+
 
 <div class="container-fluid home-page-2">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 contact-box">
+				<h4>Want to get in touch?</h4>
+				<form class="form-horizontal">
+					<div class="form-group has-feedback">
+						<label for="nameInput" class="col-sm-2 control-label">I am: </label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="nameInput" placeholder="Your Name / Company">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="emailInput" class="col-sm-2 control-label">My email is:</label>
+						<div class="col-sm-8">
+						<input type="email" class="form-control" id="emailInput" placeholder="MyEmail@email.com">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label class="col-sm-2 control-label">What's on your mind?</label>
+						<div class="col-sm-8">
+							<textarea class="form-control" rows="3" placeholder="Type your message here"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-default"> Send your message</button>
+					</div>
+					</div>
+					</form>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae sapien aliquam, eleifend lorem vel, vehicula leo. Aenean varius dolor non ex bibendum, ut auctor lectus convallis. Phasellus placerat nunc vel augue facilisis dapibus vel in metus. Sed placerat orci id bibendum vestibulum. In aliquam malesuada fringilla. Duis ligula libero, ultrices a arcu eu, tempus molestie sem. Donec ac lectus leo.</p>
 			</div>
 		</div>
 	</div>
 </div>
-
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

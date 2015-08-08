@@ -212,6 +212,14 @@ nav {
   transition: color 0.5s;
 }
 
+/* line 44, ../scss/layout/_nav.scss */
+.anchor {
+  display: block;
+  position: relative;
+  top: -25px;
+  visibility: hidden;
+}
+
 /*	Full page formatting */
 /* line 6, ../scss/layout/_homepage.scss */
 .landing-bg {
@@ -270,39 +278,50 @@ nav {
     padding-top: 33%;
   }
 }
-/* line 42, ../scss/layout/_homepage.scss */
+/* line 43, ../scss/layout/_homepage.scss */
+.landing-message .opacity-bg {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 20px 10px;
+  margin: 10px 50px;
+}
+/* line 47, ../scss/layout/_homepage.scss */
+.landing-message .opacity-bg:after {
+  clear: both;
+}
+/* line 51, ../scss/layout/_homepage.scss */
 .landing-message h2, .landing-message p {
   color: black;
 }
-/* line 43, ../scss/layout/_homepage.scss */
+/* line 54, ../scss/layout/_homepage.scss */
 .landing-message h2 {
   font-size: 4.5em;
   line-height: 1.33333em;
 }
 @media screen and (max-width: 800px) {
-  /* line 43, ../scss/layout/_homepage.scss */
+  /* line 54, ../scss/layout/_homepage.scss */
   .landing-message h2 {
     font-size: 2.625em;
     line-height: 1.14286em;
   }
 }
-/* line 48, ../scss/layout/_homepage.scss */
+/* line 59, ../scss/layout/_homepage.scss */
 .landing-message p {
   margin-bottom: 1.5%;
 }
-/* line 51, ../scss/layout/_homepage.scss */
+/* line 62, ../scss/layout/_homepage.scss */
 .landing-message button {
   background-color: #0D47A1;
+  transition: all 1s ease;
   transition: background 0.5s;
   border: 2px solid #0D47A1;
   border-radius: 10px;
 }
-/* line 56, ../scss/layout/_homepage.scss */
+/* line 68, ../scss/layout/_homepage.scss */
 .landing-message button:hover {
   transition: background 0.5s;
   background-color: #BBDEFB;
 }
-/* line 60, ../scss/layout/_homepage.scss */
+/* line 72, ../scss/layout/_homepage.scss */
 .landing-message button a {
   color: #BBDEFB;
   transition: color 0.5s;
@@ -310,35 +329,36 @@ nav {
   line-height: 2em;
   padding: 10px;
 }
-/* line 65, ../scss/layout/_homepage.scss */
+/* line 77, ../scss/layout/_homepage.scss */
 .landing-message button a:visited {
   text-decoration: none;
 }
-/* line 66, ../scss/layout/_homepage.scss */
+/* line 78, ../scss/layout/_homepage.scss */
 .landing-message button a:hover {
   color: #0D47A1;
 }
 
-/* line 73, ../scss/layout/_homepage.scss */
+/* line 85, ../scss/layout/_homepage.scss */
 .content-box {
   padding-top: 10px;
   text-align: center;
 }
-/* line 76, ../scss/layout/_homepage.scss */
+/* line 88, ../scss/layout/_homepage.scss */
 .content-box h3 {
+  margin-top: -25px;
   margin-bottom: 10px;
   color: #0D47A1;
   font-size: 2em;
   line-height: 1.5em;
 }
 @media screen and (max-width: 800px) {
-  /* line 76, ../scss/layout/_homepage.scss */
+  /* line 88, ../scss/layout/_homepage.scss */
   .content-box h3 {
     font-size: 1.5em;
     line-height: 2em;
   }
 }
-/* line 84, ../scss/layout/_homepage.scss */
+/* line 97, ../scss/layout/_homepage.scss */
 .content-box h4 {
   margin-top: 10px;
   color: #0D47A1;
@@ -347,66 +367,66 @@ nav {
   line-height: 1.71429em;
 }
 @media screen and (max-width: 800px) {
-  /* line 84, ../scss/layout/_homepage.scss */
+  /* line 97, ../scss/layout/_homepage.scss */
   .content-box h4 {
     font-size: 1.5em;
     line-height: 2em;
   }
 }
-/* line 93, ../scss/layout/_homepage.scss */
+/* line 106, ../scss/layout/_homepage.scss */
 .content-box li {
   text-align: left;
 }
 @media screen and (max-width: 986px) {
-  /* line 93, ../scss/layout/_homepage.scss */
+  /* line 106, ../scss/layout/_homepage.scss */
   .content-box li {
     text-align: center;
   }
 }
-/* line 99, ../scss/layout/_homepage.scss */
+/* line 112, ../scss/layout/_homepage.scss */
 .content-box img {
   border-radius: 50%;
   width: 150px;
 }
-/* line 103, ../scss/layout/_homepage.scss */
+/* line 116, ../scss/layout/_homepage.scss */
 .content-box a {
   color: #42A5F5;
   transition: color 0.5s;
 }
-/* line 106, ../scss/layout/_homepage.scss */
+/* line 119, ../scss/layout/_homepage.scss */
 .content-box a:hover {
   color: #0D47A1;
   transition: color 0.5s;
 }
 
-/* line 113, ../scss/layout/_homepage.scss */
+/* line 126, ../scss/layout/_homepage.scss */
 .always-right li {
   text-align: right;
 }
 @media screen and (max-width: 986px) {
-  /* line 113, ../scss/layout/_homepage.scss */
+  /* line 126, ../scss/layout/_homepage.scss */
   .always-right li {
     text-align: center;
   }
 }
 
-/* line 121, ../scss/layout/_homepage.scss */
+/* line 134, ../scss/layout/_homepage.scss */
 .content-list li, .content-list a {
   margin: 20px 0;
 }
-/* line 124, ../scss/layout/_homepage.scss */
+/* line 137, ../scss/layout/_homepage.scss */
 .content-list li {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   font-size: 1.375em;
   line-height: 2.18182em;
 }
 
-/* line 130, ../scss/layout/_homepage.scss */
+/* line 143, ../scss/layout/_homepage.scss */
 .page-1-box {
   border-top: 1px solid #90A4AE;
 }
 
-/* line 134, ../scss/layout/_homepage.scss */
+/* line 147, ../scss/layout/_homepage.scss */
 .circle-k {
   margin: -7px 10px;
   display: inline-block;
@@ -416,32 +436,41 @@ nav {
   background-color: #03A9F4;
   transition: background 0.5s;
 }
-/* line 142, ../scss/layout/_homepage.scss */
+/* line 155, ../scss/layout/_homepage.scss */
 .circle-k:hover {
   background-color: #0D47A1;
   transition: background 0.5s;
 }
 @media screen and (max-width: 986px) {
-  /* line 134, ../scss/layout/_homepage.scss */
+  /* line 147, ../scss/layout/_homepage.scss */
   .circle-k {
     display: none;
   }
 }
 
-/* line 153, ../scss/layout/_homepage.scss */
+/* line 166, ../scss/layout/_homepage.scss */
 .contact-box {
+  min-height: 60vh;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  margin-top: 15%;
-  padding: 20px;
+  margin-top: 40vh;
+  padding: 20px 50px;
   background-color: #0D47A1;
 }
-/* line 159, ../scss/layout/_homepage.scss */
+/* line 173, ../scss/layout/_homepage.scss */
+.contact-box h4 {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: #BBDEFB;
+  padding-bottom: 10px;
+}
+/* line 179, ../scss/layout/_homepage.scss */
 .contact-box p {
   color: white;
 }
 
-/* line 164, ../scss/layout/_homepage.scss */
+/* line 184, ../scss/layout/_homepage.scss */
 #main {
   padding-top: 50px;
 }

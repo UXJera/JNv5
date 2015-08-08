@@ -39,3 +39,11 @@ nav {
 		}
 	}
 }
+
+//	Anti-"Header eats the top of my #ID	//
+.anchor{	
+	display: block; 
+	position: relative; 
+	top: -25px; 
+	visibility: hidden;
+}

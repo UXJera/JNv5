@@ -39,7 +39,18 @@
 		padding-top: 20%;	}
 	@media screen and (max-width: 800px) { 	
 		padding-top: 33%;	}
-	h2, p { color: black; }
+		
+	.opacity-bg {
+		background: rgba(255,255,255 ,.25);
+		padding: 20px 10px;
+		margin: 10px 50px;
+		&:after {
+			clear: both;
+		}
+	}
+	h2, p {
+		color: black;
+	}
 	h2 {	@include adjust-font-size-to(72px);
 		@media screen and (max-width: 800px) { 
 			@include adjust-font-size-to(42px); 
@@ -50,6 +61,7 @@
 	}
 	button {
 		background-color: $blue900;
+		transition: all 1s ease;
 		@include trans-bg;
 		border: 2px solid $blue900;
 		border-radius: 10px;
@@ -74,6 +86,7 @@
 	padding-top: 10px;
 	text-align:center;
 	h3 {
+		margin-top: -25px;
 		margin-bottom: 10px;
 		color: $blue900; 
 		@include adjust-font-size-to(32px);
@@ -151,11 +164,18 @@
 //	Content Area 2	//
 
 .contact-box {
+	min-height: 60vh;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	margin-top: 15%;
-	padding: 20px;
+	margin-top: 40vh;
+	padding: 20px 50px;
 	background-color: $blue900;
+	h4 {
+		text-align: center;
+		@include adjust-font-size-to(32px);
+		color: $blue100;
+		padding-bottom: 10px;
+	}
 	p {
 		color: white;
 	}

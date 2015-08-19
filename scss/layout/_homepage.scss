@@ -3,6 +3,14 @@
 
 /*	Full page formatting */
 
+body {
+	background-color: #eee;
+}
+
+.buffer {
+	margin-top: 100px;
+}
+
 .landing-bg {
 	background: url('../img/cornsky-1920.jpg') center no-repeat; //
 	@include fullbg;
@@ -10,24 +18,47 @@
 
 .home-page-1 {
 	//background: url('../img/starsbg.jpg') center no-repeat;
-	background: #fff;
+	background: #eee;
 	@include fullbg;
 }
 
 .home-page-2 {
-	background: url('../img/ferris-wheel.jpg') center no-repeat;
+	background-color: #ccc;
+	//background: url('../img/ferris-wheel.jpg') center no-repeat;
 	@include fullbg;
 }
 
 .home-page-3 {
-	//background: url('../img/star-night-1920.jpg') center no-repeat;
-	background: black;
+	background: url('../img/star-night-1920.jpg') center no-repeat;
+	//background: black;
 	@include fullbg;
 }
 
 .home-page-4 {
 	background: url('../img/star-night-1920.jpg') center no-repeat;	
 	@include fullbg;
+}
+
+.button {
+	text-align: center;
+	margin: 30px;
+	background-color: $blue900;
+	transition: all 1s ease;
+	@include trans-bg;
+	border: 2px solid $blue900;
+	border-radius: 5px;
+	&:hover { 
+		@include trans-bg;
+		background-color: $blue100;
+	}
+	a {
+		color: $blue100;
+		@include trans-color;
+		@include adjust-font-size-to(24px);
+		padding: 10px;
+		&:visited{	text-decoration: none;}
+		&:hover {	color: $blue900;}
+	}
 }
 
 //	Landing Area	//
@@ -44,14 +75,23 @@
 		background: rgba(255,255,255 ,.25);
 		padding: 20px 10px;
 		margin: 10px 50px;
+		@media screen and (min-width: 1000px) {
+			margin: 10px 250px;
+		}
 		&:after {
 			clear: both;
 		}
 	}
 	h2, p {
 		color: black;
-	}
+	} //All of this is contingent for whatever message I plan on setting. Needs to fill 1 line only.
 	h2 {	@include adjust-font-size-to(72px);
+		@media screen and (max-width: 1376px) { 
+			@include adjust-font-size-to(58px); 
+		}
+		@media screen and (max-width: 1220px) { 
+			@include adjust-font-size-to(50px); 
+		}			
 		@media screen and (max-width: 800px) { 
 			@include adjust-font-size-to(42px); 
 		}
@@ -83,8 +123,26 @@
 //	Content Area 1 //
 
 .content-box {
-	padding-top: 10px;
+	padding-top: 30px;
 	text-align:center;
+	
+	.panel-heading {
+		background-color: $blue900;
+	a {
+		color: $blue300;
+		@include trans-color;
+		font-weight: 700;
+		&:hover {
+			color: $blue100;
+			@include trans-color;
+			}
+		}
+	}
+	
+	.panel-body {
+		margin: 0 10px;
+	}
+	
 	h3 {
 		margin-top: -25px;
 		margin-bottom: 10px;
@@ -99,9 +157,9 @@
 		color: $blue900;
 		font-weight: 700;
 		@include adjust-font-size-to(28px);
-		@media screen and (max-width: 800px) {
+		@media screen and (max-width: 1200px) {
 			@include adjust-font-size-to(24px);
-		}
+		}		
 	}
 	li {
 		text-align: left;
@@ -109,18 +167,17 @@
 			text-align: center;
 		}
 	}
-	img {
-		border-radius: 50%;
-		width: 150px;
-	}
-	a {
-		color: $blue400;
-		@include trans-color;
-		&:hover {
-			color: $blue900;
-			@include trans-color;
+	.headshot {
+		img {
+			border-radius: 50%;
+			width: 150px;
 		}
 	}
+	img {
+		//padding: 10px;
+
+	}
+
 }
 
 .always-right li{
@@ -140,10 +197,6 @@
 	}
 }
 
-.page-1-box {
-	border-top: 1px solid $bluegrey300;
-}
-
 .circle-k {
 	margin: -7px 10px;
 	display: inline-block;
@@ -161,7 +214,8 @@
 	}
 }
 
-//	Content Area 2	//
+
+//	Content Area 3	//
 
 .contact-box {
 	min-height: 60vh;

@@ -4,7 +4,9 @@ $(function() {
 		transitionSupported = typeof document.body.style.transitionProperty === 'string',
 		scrollTime = 1; // scroll time in seconds
 
-		$("a[href*=#]:not([href=#]):not([href=#collapseOne]):not([href=#collapseTwo]):not([href=#collapseThree]):not([href=#collapseFour]):not([href=#collapseFive]):not([href=#collapseSix])").on("click", function(e) {
+	$("a[href=#main]").on("click", function(e) { 
+  //$("a[href*=#]:not([href=#])").on("click", function(e) {  
+		// For all #id scrollers, has problems with fixed nav bar.
 		var target,
 			avail,
 			scroll,

@@ -60,26 +60,34 @@
 
 	<div class="landing-message">
 		<div class="opacity-bg">
-			<h2>Hello! Thank you for visiting!</h2>
-			<p>Howdy!</p>
+			<h2>Growing Creative Solutions</h2>
+			<p>Through good ol' fashioned observation and human understanding</p>
 		</div>
-		<button><a href="#main">Find out more</a></button>
+		<button class="button"><a href="#part-1">Find out more</a></button>
 	</div>
 	
 </div>
-<!-- Main Page 1 -->
-<div class="anchor" id="main"></div>
+<!-- Main Page 1 // About Me-->
+<div class="anchor" id="part-1"></div>
 <div class="container-fluid home-page-1">
-	<div class="container">
+	<div class="container buffer">
 		<div  class="row content-box">
-			<div class="col-md-6 col-md-offset-3">
+			<div class="col-md-8 col-md-offset-2 headshot">
 				<h3> Hi! My name is Jeremiah Nyman </h3>
 				<a href="#"><img src="img/jnheadshot.jpg"  alt="Jeremiah Nyman headshot" /> </a>
-				<p> I am a UX Designer</p>
+				<p> I am a UX Designer who specializes in front-end design and understanding client's needs.</p>
+				<button class="button"><a href="#part-2">My work</a></button>
 			</div>
 		</div>
+	</div>
+</div>
+<!-- Main Page 2 // My Work -->
+<div class="anchor" id="part-2"></div>
+
+<div class="container-fluid home-page-2">
+	<div class="container">
 		<div  class="row content-box">
-			<div class="col-md-6 page-1-box">
+			<div class="col-md-6">
 				<h4>Research and Analytic projects</h4>
 				
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -87,15 +95,15 @@
 				<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="itemOne">
 						<h5 class="panel-title">
-							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 							Can video games improve your attention?
 							</a>
 						</h5>
 					</div>
-					<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemOne">
+					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="itemOne">
 						<div class="panel-body">
-							<div class="row">
-								<img src="img/jnheadshot.jpg">
+							<div class="row hidden-sm hidden-xs">
+								<img src="img/video_game_1.jpg">
 							</div>
 							<div class="row"><p>
 								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. </p>
@@ -114,7 +122,7 @@
 					</div>
 					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemTwo">
 						<div class="panel-body">
-							<div class="row">
+							<div class="row hidden-sm hidden-xs">
 								<img src="img/jnheadshot.jpg">
 							</div>
 							<div class="row"><p>
@@ -133,7 +141,7 @@
 					</div>
 					<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemThree">
 						<div class="panel-body">
-							<div class="row">
+							<div class="row hidden-sm hidden-xs">
 								<img src="img/jnheadshot.jpg">
 							</div>
 							<div class="row"><p>
@@ -151,7 +159,7 @@
 						<li><a href="#"><span class="circle-k"></span>The importance of Analytics in Professional Gaming</a></li>
 					</ul-->
 			</div>
-			<div class="col-md-6 page-1-box">
+			<div class="col-md-6">
 				<h4>Designs and Portfolio Web Content</h4>
 					<!--div class="row box-images">
 						<div class="col-xs-6 col-md-3 col-md-offset-2">
@@ -167,16 +175,16 @@
 					 <div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="itemFour">
 						  <h5 class="panel-title">
-							<a role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							<a role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
 								Sketches and Digital Designs
 							</a>
 						  </h5>
 						</div>
 						
-						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemFour">
+						<div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="itemFour">
 						  <div class="panel-body">
 							<div class="row">
-								<img src="img/jnheadshot.jpg">
+								<img src="img/lolui-small.png">
 							</div>
 							<div class="row"><p>
 								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. </p>
@@ -215,7 +223,7 @@
 						</div>
 						<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemSix">
 						  <div class="panel-body">
-							<div class="row">
+							<div class="row hidden-sm hidden-xs">
 								<img src="img/jnheadshot.jpg">
 							</div>
 							<div class="row"><p>
@@ -232,15 +240,16 @@
 						<li><a href="#">My thoughts on User Experience<span class="circle-k"></span></a></li>
 					</ul-->
 			</div>
+			<div class="col-md-12">
+				<button class="button"><a href="/resume">My resume</a></button>
+			</div>
 		</div>
-	</div>
-
-	
+	</div>	
 </div>
 
+<!-- Main Page 3 // Contact -->
 
-
-<div class="container-fluid home-page-2">
+<div class="container-fluid home-page-3">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 contact-box">

@@ -4,12 +4,15 @@
 //	Font Imports	//
 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,700);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:700italic,400,700);
+//@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 
 //	Transitions 	//
 
 $trans-bg: background 0.5s;
 $trans-color: color 0.5s;
+
+$nav-height: 50px; // This is to offset the height of the navbar
 
 //	Descriptive color variables	//
 
@@ -41,8 +44,8 @@ $color-body		: $white;
 //	Font stacks	//
 
 $stack-sans-serif	:	Helvetica, Arial, sans-serif;
-$stack-raleway	:	Raleway, $stack-sans-serif;
-$stack-roboto		:	'Roboto Condensed', $stack-sans-serif; 
+$stack-roboto-cd	:	'Roboto Condensed', $stack-sans-serif; 
+$stack-roboto		:	'Roboto', $stack-sans-serif; 
 $stack-helvetica	:	'Helvetica Neue', $stack-sans-serif;
 $stack-abolition	:	'Abolition Regular', $stack-sans-serif;
 

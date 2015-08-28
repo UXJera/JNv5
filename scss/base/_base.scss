@@ -4,7 +4,7 @@
 
 // Global Variables
 
-$base-font-size: 16px !default;
+$base-font-size: 18px !default;
 $base-line-height: 24px;
 @include establish-baseline($base-font-size);
 
@@ -13,29 +13,12 @@ $base-line-height: 24px;
 }
 
 body {
-  @include text(1em, 1.5, $color: $color-text-base);
   margin: 0;
-  font-family: $stack-raleway;
-}
-
-h1,
-h2 {
-  font-family: $stack-roboto;
-}
-
-h2 {
-  @include text(3.3125em, 1.1, normal);
-  margin: 0 0 .5em;
-}
-
-h3 {
-  @include text(1.25em, 1.2, $color: $color-text-dark);
-  margin-bottom: 1.7em;
+  font-family: $stack-roboto-cd;
 }
 
 img {
   max-width: 100%;
-  margin-bottom: 20px;
   border-radius: $br;
 }
 
@@ -46,19 +29,4 @@ ol {
 
 li {
   margin-bottom: 10px;
-}
-
-/* Pseudo-classes ------------------ */
-
-a {
-  &:link {
-    color: $color-link-default;
-    text-decoration: none;
-  }
-  &:visited {
-    color: $color-link-visited;
-  }
-  &:hover {
-    color: rgba($color-link-default, .5);
-  }
 }

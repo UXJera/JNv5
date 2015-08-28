@@ -14,18 +14,19 @@
 </head>
 
 <body>
-<div class="container-fluid landing-bg">
-	<nav class="navbar navbar-default navbar-fixed-top">
+
+<header class="container-fluid landing-bg">
+<nav class="navbar navbar-fixed-top" role="navigation">
+	<!--nav class="navbar navbar-default navbar-fixed-top"-->
 		<div class="container-fluid navbar-fluid">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		<div class="navbar-header">
+			<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
+				<span class="glyphicon glyphicon-menu-hamburger"></span>
 			</button>
 			<h1><a class="navbar-brand" href="#">Jeremiah Nyman</a></h1>
-		
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		</div>
+		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research & Analysis <span class="caret"></span></a>
@@ -66,25 +67,30 @@
 		<button class="button"><a href="#part-1">Find out more</a></button>
 	</div>
 	
-</div>
+</header>
 <!-- Main Page 1 // About Me-->
-<div class="anchor" id="part-1"></div>
-<div class="container-fluid home-page-1">
+<!--div class="anchor" ></div-->
+<div class="container-fluid home-page-1" id="part-1">
 	<div class="container buffer">
 		<div  class="row content-box">
-			<div class="col-md-8 col-md-offset-2 headshot">
+			<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
 				<h3> Hi! My name is Jeremiah Nyman </h3>
-				<a href="#"><img src="img/jnheadshot.jpg"  alt="Jeremiah Nyman headshot" /> </a>
-				<p> I am a UX Designer who specializes in front-end design and understanding client's needs.</p>
+				<a class="headshot" href="#"><img src="img/jnheadshot.jpg" alt="Jeremiah Nyman headshot" /></a>
+			</div>
+			<div class="col-md-12">
+				<h6>I am a User Experience (UX) Designer! That's a fancy title that means I help work with client's needs and the consumer's wants (and they often don't see eye-to-eye). I take the psychology of the user and apply it to the needs of the client.<br><br>
+Most of the time, I build websites that are simple to navigate, work well on many types of screens, and aim to send a succinct message to the user.<br><br>
+But sometimes, I have to solve the problems that don't have an easy answer. Being a UX Designer goes beyond simply coding, and works tackles the hardships between technology and how people use it.
+Below are a sample of some of the projects that I have been a part of, demonstrating the many hats that a UX Designer has to wear to get the job done.</h6>
 				<button class="button"><a href="#part-2">My work</a></button>
 			</div>
 		</div>
 	</div>
 </div>
 <!-- Main Page 2 // My Work -->
-<div class="anchor" id="part-2"></div>
+<!--div class="anchor" id="part-2"></div-->
 
-<div class="container-fluid home-page-2">
+<div class="container-fluid home-page-2" id="part-2">
 	<div class="container">
 		<div  class="row content-box">
 			<div class="col-md-6">

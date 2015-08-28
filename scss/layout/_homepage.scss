@@ -8,7 +8,7 @@ body {
 }
 
 .buffer {
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .landing-bg {
@@ -23,15 +23,18 @@ body {
 }
 
 .home-page-2 {
+	padding-top: 50px;
 	background-color: #ccc;
 	//background: url('../img/ferris-wheel.jpg') center no-repeat;
 	@include fullbg;
+	min-height: 50vh;
 }
 
 .home-page-3 {
 	background: url('../img/star-night-1920.jpg') center no-repeat;
 	//background: black;
 	@include fullbg;
+	background-attachment: scroll;
 }
 
 .home-page-4 {
@@ -57,7 +60,7 @@ body {
 		@include adjust-font-size-to(24px);
 		padding: 10px;
 		&:visited{	text-decoration: none;}
-		&:hover {	color: $blue900;}
+		&:hover {	color: $blue900; text-decoration: none;}
 	}
 }
 
@@ -114,16 +117,14 @@ body {
 			@include trans-color;
 			@include adjust-font-size-to(24px);
 			padding: 10px;
-			&:visited{	text-decoration: none;}
-			&:hover {	color: $blue900;}
+			&:hover { color: $blue900; text-decoration: none;}
 		}
 	}
 }
 
-//	Content Area 1 //
+//	Content Box formatting	//
 
 .content-box {
-	padding-top: 30px;
 	text-align:center;
 	
 	.panel-heading {
@@ -132,9 +133,10 @@ body {
 		color: $blue300;
 		@include trans-color;
 		font-weight: 700;
-		&:hover {
+		&:hover, &:focus {
 			color: $blue100;
 			@include trans-color;
+			text-decoration: none;
 			}
 		}
 	}
@@ -161,23 +163,38 @@ body {
 			@include adjust-font-size-to(24px);
 		}		
 	}
+	h5, h6 {
+		@include adjust-font-size-to(20px);
+		line-height: 1.7em;
+		}
+	h6, p {
+		font-family: $stack-roboto;
+	}
 	li {
 		text-align: left;
 		@media screen and (max-width: 986px) {
 			text-align: center;
 		}
 	}
+	p {
+		font-family: $stack-roboto;
+		@include adjust-font-size-to(16px);
+		line-height: 1.7em;
+	}
+}
+
+//	Content Area 1 //
+
+.home-page-1 {
+	h3,a,p {
+		margin: 20px 0;
+	}
 	.headshot {
 		img {
-			border-radius: 50%;
-			width: 150px;
+		border-radius: 50%;
+		width: 200px;
 		}
 	}
-	img {
-		//padding: 10px;
-
-	}
-
 }
 
 .always-right li{
@@ -194,23 +211,6 @@ body {
 	li {
 		font-family: $stack-roboto;
 		@include adjust-font-size-to(22px);
-	}
-}
-
-.circle-k {
-	margin: -7px 10px;
-	display: inline-block;
-	border-radius: 50%;
-	height: 30px;
-	width: 30px;
-	background-color: $blue500;
-	@include trans-bg;
-	&:hover {
-		background-color: $blue900;
-		@include trans-bg;
-	}
-	@media screen and (max-width: 986px) {
-		display: none;
 	}
 }
 
@@ -233,8 +233,8 @@ body {
 	p {
 		color: white;
 	}
+	label {
+		@include adjust-font-size-to(18px);
+		color: #bbb;
+	}	
 }	
-
-#main {
-	padding-top: 50px;
-}

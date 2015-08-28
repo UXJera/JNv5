@@ -1,43 +1,68 @@
 @import "components/color";
 
 nav {
-	font-family: $stack-roboto;
+	@include trans-color;
+	@media screen and (max-width: 1000px) {
+		@include adjust-font-size-to(15px);
+	}
 }
 
-.navbar-default .navbar-brand {
+.nav {
+	margin-bottom: -15px;
+}
+  
+.navbar-fixed-top {
+	background-color: rgba(0,0,0,.4);
+	@include trans-bg;	
+	&:hover, &:active {
+		background-color: black;
+		@include trans-bg; 
+	}
+}
+
+.navbar-brand {
 	@include trans-color;
 	@include adjust-font-size-to(26px);
 	padding: 0 10px;
-	color: #bbb;
-
+	color: #ccc;
 	&:hover { color: white;}
+	
 }
 
 .dropdown-toggle {
+	padding: 10px 0;
 	@include adjust-font-size-to(22px);
 	color: white;
+	@media screen and (max-width: 1000px) {
+		text-align: center;
+	}
 }
 
-.navbar-default .navbar-nav>li>a {
-	color: #bbb;
+.navbar-fluid .navbar-nav>li>a {
+	color: #ccc;
 	@include trans-color;
 	&:hover {
 		@include trans-color;
-		color: white;
+		color: black;
 	}
 }
 
 // Adjustment for dropdown menu items	//
 
-.dropdown-menu {
-	>li>a {
+.navbar-collapse {
+	padding: 0px;
+}
+
+.dropdown-menu>li>a {
 	@include adjust-font-size-to(18px);
-	text-align: center;
 	@include trans-color;
+	text-align: center;
 	&:hover {
 		@include trans-color;
-		}
 	}
+	@media screen and (max-width: 767px) {
+		color: #ccc;
+	}	
 }
 
 //	Anti-"Header eats the top of my #ID	//

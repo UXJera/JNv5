@@ -2,13 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico" />
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="This is the portfolio website for Jeremiah Nyman showcasing a variety of research studies and digital designs.">
 	<meta name="author" content="Jeremiah Nyman">
 	<meta name="keywords" content="UX,Jera,Jeremiah Nyman,Nyman, User Experience,Portfolio,WSU,Wichita State,Human Factors,UX Designer,UX Research,KSN,Wichita,Kansas">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css"/>
 	<title> Welcome | Jeremiah Nyman </title>
 </head>
@@ -16,9 +17,9 @@
 <body>
 
 <header class="container-fluid landing-bg">
+
 <nav class="navbar navbar-fixed-top" role="navigation">
-	<!--nav class="navbar navbar-default navbar-fixed-top"-->
-		<div class="container-fluid navbar-fluid">
+	<div class="container-fluid navbar-fluid">
 		<div class="navbar-header">
 			<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
@@ -29,7 +30,7 @@
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research & Analysis <span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="#">Video Games & Attention</a></li>
 						<li><a href="#">Time & Perpection</a></li>
@@ -39,7 +40,7 @@
 					</ul>
 				</li>
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Designs & Content<span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Web Content<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="#">Sketches and Designs</a></li>
 						<li><a href="#">Web Content</a></li>
@@ -56,125 +57,94 @@
 				</li>					
 			</ul>
 		</div>
-		</div>
-	</nav>
-
-	<div class="landing-message">
-		<div class="opacity-bg">
-			<h2>Growing Creative Solutions</h2>
-			<p>Through good ol' fashioned observation and human understanding</p>
-		</div>
-		<button class="button"><a href="#part-1">Find out more</a></button>
 	</div>
+</nav>
+
+	<section class="landing-message">
+		<div class="opacity-bg">
+			<h2>UX Research and Designer</h2>
+			<p>Through good ol' fashioned observation and human understanding</p>
+			<div class="fa-icons">
+				<a href="http://bit.ly/1iCyGVR" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="http://bit.ly/1FAIt9y" target="_blank"><i class="fa fa-github"></i></a>
+				<a href="http://bit.ly/1gZeufN" target="_blank"><i class="fa fa-linkedin"></i></a>
+			</div>
+		</div>
+		<button class="button"><a href="#part-1">Let's explore</a></button>
+	</section>
 	
 </header>
-<!-- Main Page 1 // About Me-->
-<!--div class="anchor" ></div-->
-<div class="container-fluid home-page-1" id="part-1">
-	<div class="container buffer">
-		<div  class="row content-box">
-			<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-				<h3> Hi! My name is Jeremiah Nyman </h3>
-				<a class="headshot" href="#"><img src="img/jnheadshot.jpg" alt="Jeremiah Nyman headshot" /></a>
-			</div>
-			<div class="col-md-12">
-				<h6>I am a User Experience (UX) Designer! That's a fancy title that means I work to solve client's problems by understanding their customers' wants and needs. I take the psychology of the user to see how it can be improved to make it better for both client and customer.<br><br>
-Most of the time, I build websites that are simple to navigate, work well on many types of screens, and aim to send a succinct message to the user.<br><br>
-But sometimes, I have to solve the problems that don't have an easy answer. Being a UX Designer goes beyond simply coding, and works to tackle the hardships between technology and how people use it.
-Below are a sample of some of the projects that I have been a part of, showcasing the many hats that a UX Designer has to wear to get the job done.</h6>
-				<button class="button"><a href="#part-2">My work</a></button>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Main Page 2 // My Work -->
-<!--div class="anchor" id="part-2"></div-->
 
-<div class="container-fluid home-page-2" id="part-2">
-	<div class="container">
-		<div  class="row content-box">
-			<div class="col-md-6">
-				<h4>Research and Analytic projects</h4>
-				
+<section class="container-fluid home-page-1" id="part-1">
+	<div class="container buffer">
+		<div  class="content-box">
+			<div class="col-sm-6 col-xs-12">
+				<h4 id="projects">Analysis and Research Projects</h4>
+
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				 
-				<div class="panel panel-default">
-					<div class="panel-heading" role="tab" id="itemOne">
-						<h5 class="panel-title">
-							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							Can video games improve your attention?
-							</a>
-						</h5>
-					</div>
-					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="itemOne">
-						<div class="panel-body">
-							<div class="row hidden-sm hidden-xs">
-								<a href="#"><img src="img/video_game_1.jpg"></a>
-							</div>
-							<div class="row"><p>
-								When you play video games, there's so much you have to pay attention to. There are numbers at the bottom left of the screen, a map in the top right, and a whole lot of action going on inbetween. So how can playing video games actually make your senses sharper in real world applications? Our team conducted a study, <a href="#">click here to find out more.</a></p>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="itemOne">
+							<h5 class="panel-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Can video games improve your attention?
+								</a>
+							</h5>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="itemOne">
+							<div class="panel-body">
+								<div class="row hidden-sm hidden-xs">
+									<a href="#"><img src="img/video_game_1.jpg"></a>
+								</div>
+								<div class="row"><p>
+									When you play video games, there's so much you have to pay attention to. There are numbers at the bottom left of the screen, a map in the top right, and a whole lot of action going on inbetween. So how can playing video games actually make your senses sharper in real world applications? Our team conducted a study, <a href="#">click here to find out more.</a></p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 			  
-				<div class="panel panel-default">
-					<div class="panel-heading" role="tab" id="itemTwo">
-						<h5 class="panel-title">
-							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-							Modernizing a college's social media
-							</a>
-						</h5>
-					</div>
-					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemTwo">
-						<div class="panel-body">
-							<div class="row hidden-sm hidden-xs">
-								<img src="img/jnheadshot.jpg">
-							</div>
-							<div class="row"><p>
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. </p>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="itemTwo">
+							<h5 class="panel-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+								Modernizing a college's social media
+								</a>
+							</h5>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemTwo">
+							<div class="panel-body">
+								<div class="row hidden-sm hidden-xs">
+									<img src="img/jnheadshot.jpg">
+								</div>
+								<div class="row"><p>
+									When Wichita State brought in a new dean with big aspirations, the glaring issues of how the university had used social media as a service were drug into the spotlight. The two people who ran the university's social media had no idea where to start, and decided to tap the brightest minds of the marketing department to find the solutions to capitalize on the usage of social media. <a href="#">Here are the insights we had to share.</a></p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading" role="tab" id="itemThree">
-						<h5 class="panel-title">
-							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							The importance of Analytics in Professional Gaming
-							</a>
-						</h5>
-					</div>
-					<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemThree">
-						<div class="panel-body">
-							<div class="row hidden-sm hidden-xs">
-								<img src="img/jnheadshot.jpg">
-							</div>
-							<div class="row"><p>
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. </p>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="itemThree">
+							<h5 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								The importance of Analytics in Professional Gaming
+								</a>
+							</h5>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="itemThree">
+							<div class="panel-body">
+								<div class="row hidden-sm hidden-xs">
+									<img src="img/jnheadshot.jpg">
+								</div>
+								<div class="row"><p>
+									Competitive video games (also known as e-Sports) has grown into a multi-billion dollar per year enterprise. Teams have grown beyond teens playing video games in their own rooms and onto a grand stage, where teams with the best possible resources will be the ones on the apex of competition. </p>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				
-			</div>		
-
-					<!--ul class="content-list">
-						<li><a href="#"><span class="circle-k"></span>Can video games improve your attention?</a></li>
-						<li><a href="#"><span class="circle-k"></span>Modernizing a college's social media</a></li>
-						<li><a href="#"><span class="circle-k"></span>The importance of Analytics in Professional Gaming</a></li>
-					</ul-->
+					</div>	
+				</div>		
 			</div>
-			<div class="col-md-6">
+			<div class="col-sm-6 col-xs-12">
 				<h4>Designs and Portfolio Web Content</h4>
-					<!--div class="row box-images">
-						<div class="col-xs-6 col-md-3 col-md-offset-2">
-							<img src="img/jnheadshot.jpg" alt="Research Picture" />
-						</div>
-						<div class="col-xs-6 col-md-3 col-md-offset-2">
-							<img src="img/jnheadshot.jpg" alt="Research Picture" />
-						</div>
-					</div-->
 
 					<div class="panel-group" id="accordionTwo" role="tablist" aria-multiselectable="true">
 					 
@@ -198,7 +168,6 @@ Below are a sample of some of the projects that I have been a part of, showcasin
 						  </div>
 					   </div>
 					 </div>
-					  
 					  
 					  <div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="itemFive">
@@ -239,59 +208,71 @@ Below are a sample of some of the projects that I have been a part of, showcasin
 						</div>
 					  </div>
 					</div>
-					
-					<!--ul class="content-list always-right">
-						<li><a href="#">Sketches and Digital Designs<span class="circle-k"></span></a></li>
-						<li><a href="#">Premium Web Content (from KSN.com)<span class="circle-k"></span></a></li>
-						<li><a href="#">My thoughts on User Experience<span class="circle-k"></span></a></li>
-					</ul-->
-			</div>
-			<div class="col-md-12">
-				<button class="button"><a href="/resume">My resume</a></button>
-			</div>
-		</div>
-	</div>	
-</div>
-
-<!-- Main Page 3 // Contact -->
-
-<div class="container-fluid home-page-3">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 contact-box">
-				<h4>Want to get in touch?</h4>
-				<form class="form-horizontal">
-					<div class="form-group has-feedback">
-						<label for="nameInput" class="col-sm-2 control-label">I am: </label>
-						<div class="col-sm-8">
-							<input type="text" class="form-control" id="nameInput" placeholder="Your Name / Company">
-						</div>
-					</div>
-					
-					<div class="form-group">
-						<label for="emailInput" class="col-sm-2 control-label">My email is:</label>
-						<div class="col-sm-8">
-						<input type="email" class="form-control" id="emailInput" placeholder="MyEmail@email.com">
-						</div>
-					</div>
-					
-					<div class="form-group">
-						<label class="col-sm-2 control-label">What's on your mind?</label>
-						<div class="col-sm-8">
-							<textarea class="form-control" rows="3" placeholder="Type your message here"></textarea>
-						</div>
-					</div>
-					<div class="form-group">
-					<div class="col-sm-offset-2 col-sm-10">
-						<button type="submit" class="btn btn-default"> Send your message</button>
-					</div>
-					</div>
-					</form>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae sapien aliquam, eleifend lorem vel, vehicula leo. Aenean varius dolor non ex bibendum, ut auctor lectus convallis. Phasellus placerat nunc vel augue facilisis dapibus vel in metus. Sed placerat orci id bibendum vestibulum. In aliquam malesuada fringilla. Duis ligula libero, ultrices a arcu eu, tempus molestie sem. Donec ac lectus leo.</p>
+				</div>
+			<div class="col-sm-12">
+				<button class="button"><a href="#part-2">About Me</a></button>
 			</div>
 		</div>
 	</div>
-</div>
+
+</section>
+<!-- Main Page 2 // My Work -->
+
+<section class="container-fluid home-page-2" id="part-2">
+
+	<div class="container buffer">
+		<div  class="content-box about me">
+			<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+				<h3> Hi! My name is Jeremiah Nyman</h3>
+				<a class="headshot" href="#"><img src="img/jnheadshot.jpg" alt="Jeremiah Nyman headshot" /></a>
+			</div>
+			<div class="col-sm-12">
+				<h6>I am a <span class="em">User Experience (UX) Designer</span>! That's a fancy title that means I work to solve the client's problems by understanding their customers' wants and needs. I take the psychology of the user to improve the product for both client and customer needs.<br><br>
+				Typically I design websites that are intuitive to navigate, work well on many types of devices, and deliver a succinct message to the user.<br><br>
+				But sometimes, <span class="em">I have to solve the problems that don't have an easy answer.</span> Being a UX Designer goes beyond simply coding, and works to tackle the hardships between technology and how people use it.</h6>
+				<button class="button"><a href="/resume">My resume</a></button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Main Page 3 // Contact -->
+
+<section class="container-fluid home-page-3">
+	<div class="container">
+		<div class="col-sm-12 contact-box">
+			<h4>Want to get in touch?</h4>
+			<form class="form-horizontal">
+				<div class="form-group has-feedback">
+					<label for="nameInput" class="col-sm-2 control-label">I am: </label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" id="nameInput" placeholder="Your Name / Company">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="emailInput" class="col-sm-2 control-label">My email is:</label>
+					<div class="col-sm-8">
+					<input type="email" class="form-control" id="emailInput" placeholder="MyEmail@email.com">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-sm-2 control-label">What's on your mind?</label>
+					<div class="col-sm-8">
+						<textarea class="form-control" rows="3" placeholder="Type your message here"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default"> Send your message</button>
+				</div>
+				</div>
+				</form>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae sapien aliquam, eleifend lorem vel, vehicula leo. Aenean varius dolor non ex bibendum, ut auctor lectus convallis. Phasellus placerat nunc vel augue facilisis dapibus vel in metus. Sed placerat orci id bibendum vestibulum. In aliquam malesuada fringilla. Duis ligula libero, ultrices a arcu eu, tempus molestie sem. Donec ac lectus leo.</p>
+		</div>
+	</div>
+</section>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>

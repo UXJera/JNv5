@@ -219,3 +219,5 @@ pip-log.txt
 .sass-cache/*
 sass-cache
 cleaning.html
+/.sass-cache
+/.sass-cache/*

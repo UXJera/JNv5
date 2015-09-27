@@ -199,18 +199,12 @@ nav {
   visibility: hidden;
 }
 
-/*	Full page formatting */
 /* line 6, ../scss/layout/_homepage.scss */
 body {
   background-color: #eee;
 }
 
 /* line 10, ../scss/layout/_homepage.scss */
-.buffer {
-  margin-top: 50px;
-}
-
-/* line 14, ../scss/layout/_homepage.scss */
 .landing-bg {
   background: url("../img/cornsky-1920.jpg") center no-repeat;
   min-height: 100vh;
@@ -218,25 +212,26 @@ body {
   background-size: cover;
 }
 
-/* line 19, ../scss/layout/_homepage.scss */
+/* line 15, ../scss/layout/_homepage.scss */
 .home-page-1 {
-  background: #eee;
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-/* line 25, ../scss/layout/_homepage.scss */
-.home-page-2 {
-  padding-top: 50px;
-  background-color: #ccc;
+  background: #ccc;
   min-height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   min-height: 50vh;
 }
 
-/* line 33, ../scss/layout/_homepage.scss */
+/* line 21, ../scss/layout/_homepage.scss */
+.home-page-2 {
+  padding-top: 50px;
+  background-color: #eee;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 50vh;
+}
+
+/* line 28, ../scss/layout/_homepage.scss */
 .home-page-3 {
   background: url("../img/star-night-1920.jpg") center no-repeat;
   min-height: 100vh;
@@ -245,7 +240,7 @@ body {
   background-attachment: scroll;
 }
 
-/* line 40, ../scss/layout/_homepage.scss */
+/* line 34, ../scss/layout/_homepage.scss */
 .home-page-4 {
   background: url("../img/star-night-1920.jpg") center no-repeat;
   min-height: 100vh;
@@ -253,7 +248,12 @@ body {
   background-size: cover;
 }
 
-/* line 45, ../scss/layout/_homepage.scss */
+/* line 39, ../scss/layout/_homepage.scss */
+.buffer {
+  margin-top: 50px;
+}
+
+/* line 43, ../scss/layout/_homepage.scss */
 .button {
   text-align: center;
   margin: 30px;
@@ -263,12 +263,12 @@ body {
   border: 2px solid #0D47A1;
   border-radius: 5px;
 }
-/* line 53, ../scss/layout/_homepage.scss */
+/* line 51, ../scss/layout/_homepage.scss */
 .button:hover {
   transition: background 0.5s;
   background-color: #BBDEFB;
 }
-/* line 57, ../scss/layout/_homepage.scss */
+/* line 55, ../scss/layout/_homepage.scss */
 .button a {
   color: #BBDEFB;
   transition: color 0.5s;
@@ -276,84 +276,69 @@ body {
   line-height: 2em;
   padding: 10px;
 }
-/* line 62, ../scss/layout/_homepage.scss */
+/* line 60, ../scss/layout/_homepage.scss */
 .button a:visited {
   text-decoration: none;
 }
-/* line 63, ../scss/layout/_homepage.scss */
+/* line 61, ../scss/layout/_homepage.scss */
 .button a:hover {
   color: #0D47A1;
   text-decoration: none;
 }
 
-/* line 69, ../scss/layout/_homepage.scss */
+/* line 67, ../scss/layout/_homepage.scss */
 .landing-message {
   text-align: center;
   padding-top: 15%;
 }
 @media screen and (max-width: 1100px) {
-  /* line 69, ../scss/layout/_homepage.scss */
+  /* line 67, ../scss/layout/_homepage.scss */
   .landing-message {
     padding-top: 20%;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 69, ../scss/layout/_homepage.scss */
+  /* line 67, ../scss/layout/_homepage.scss */
   .landing-message {
     padding-top: 33%;
   }
 }
-/* line 77, ../scss/layout/_homepage.scss */
-.landing-message .opacity-bg {
-  background: rgba(255, 255, 255, 0.25);
-  padding: 20px 10px;
-  margin: 10px 50px;
-}
-@media screen and (min-width: 1000px) {
-  /* line 77, ../scss/layout/_homepage.scss */
-  .landing-message .opacity-bg {
-    margin: 10px 250px;
-  }
-}
-/* line 84, ../scss/layout/_homepage.scss */
-.landing-message .opacity-bg:after {
-  clear: both;
-}
-/* line 88, ../scss/layout/_homepage.scss */
+/* line 74, ../scss/layout/_homepage.scss */
 .landing-message h2, .landing-message p {
+  font-weight: 700;
   color: black;
 }
-/* line 91, ../scss/layout/_homepage.scss */
+/* line 78, ../scss/layout/_homepage.scss */
 .landing-message h2 {
   font-size: 4.5em;
   line-height: 1.33333em;
 }
 @media screen and (max-width: 1376px) {
-  /* line 91, ../scss/layout/_homepage.scss */
+  /* line 78, ../scss/layout/_homepage.scss */
   .landing-message h2 {
     font-size: 3.625em;
     line-height: 1.24138em;
   }
 }
 @media screen and (max-width: 1220px) {
-  /* line 91, ../scss/layout/_homepage.scss */
+  /* line 78, ../scss/layout/_homepage.scss */
   .landing-message h2 {
     font-size: 3.125em;
     line-height: 1.44em;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 91, ../scss/layout/_homepage.scss */
+  /* line 78, ../scss/layout/_homepage.scss */
   .landing-message h2 {
     font-size: 2.625em;
     line-height: 1.14286em;
   }
 }
-/* line 102, ../scss/layout/_homepage.scss */
+/* line 89, ../scss/layout/_homepage.scss */
 .landing-message p {
   margin-bottom: 1.5%;
 }
-/* line 105, ../scss/layout/_homepage.scss */
+/* line 92, ../scss/layout/_homepage.scss */
 .landing-message button {
   background-color: #0D47A1;
   transition: all 1s ease;
@@ -361,12 +346,12 @@ body {
   border: 2px solid #0D47A1;
   border-radius: 10px;
 }
-/* line 111, ../scss/layout/_homepage.scss */
+/* line 98, ../scss/layout/_homepage.scss */
 .landing-message button:hover {
   transition: background 0.5s;
   background-color: #BBDEFB;
 }
-/* line 115, ../scss/layout/_homepage.scss */
+/* line 102, ../scss/layout/_homepage.scss */
 .landing-message button a {
   color: #BBDEFB;
   transition: color 0.5s;
@@ -374,37 +359,59 @@ body {
   line-height: 2em;
   padding: 10px;
 }
-/* line 120, ../scss/layout/_homepage.scss */
+/* line 107, ../scss/layout/_homepage.scss */
 .landing-message button a:hover {
   color: #0D47A1;
   text-decoration: none;
 }
 
-/* line 127, ../scss/layout/_homepage.scss */
+/* line 112, ../scss/layout/_homepage.scss */
+.fa-icons {
+  font-size: 2.25em;
+}
+/* line 114, ../scss/layout/_homepage.scss */
+.fa-icons .fa {
+  padding: 7px;
+  margin: 0 10px;
+  border-radius: 50%;
+  color: #0D47A1;
+  transition: color 0.5s;
+  background-color: #BBDEFB;
+  transition: background 0.5s;
+}
+/* line 122, ../scss/layout/_homepage.scss */
+.fa-icons .fa:hover {
+  background-color: #0D47A1;
+  transition: background 0.5s;
+  color: #BBDEFB;
+  transition: color 0.5s;
+}
+
+/* line 133, ../scss/layout/_homepage.scss */
 .content-box {
   text-align: center;
 }
-/* line 130, ../scss/layout/_homepage.scss */
+/* line 136, ../scss/layout/_homepage.scss */
 .content-box .panel-heading {
   background-color: #0D47A1;
 }
-/* line 132, ../scss/layout/_homepage.scss */
+/* line 138, ../scss/layout/_homepage.scss */
 .content-box .panel-heading a {
   color: #64B5F6;
   transition: color 0.5s;
   font-weight: 700;
 }
-/* line 136, ../scss/layout/_homepage.scss */
+/* line 142, ../scss/layout/_homepage.scss */
 .content-box .panel-heading a:hover, .content-box .panel-heading a:focus {
   color: #BBDEFB;
   transition: color 0.5s;
   text-decoration: none;
 }
-/* line 144, ../scss/layout/_homepage.scss */
+/* line 150, ../scss/layout/_homepage.scss */
 .content-box .panel-body {
   margin: 0 10px;
 }
-/* line 148, ../scss/layout/_homepage.scss */
+/* line 154, ../scss/layout/_homepage.scss */
 .content-box h3 {
   margin-top: -25px;
   margin-bottom: 10px;
@@ -413,13 +420,13 @@ body {
   line-height: 1.5em;
 }
 @media screen and (max-width: 800px) {
-  /* line 148, ../scss/layout/_homepage.scss */
+  /* line 154, ../scss/layout/_homepage.scss */
   .content-box h3 {
     font-size: 1.5em;
     line-height: 2em;
   }
 }
-/* line 157, ../scss/layout/_homepage.scss */
+/* line 163, ../scss/layout/_homepage.scss */
 .content-box h4 {
   margin-top: 10px;
   color: #0D47A1;
@@ -428,33 +435,33 @@ body {
   line-height: 1.71429em;
 }
 @media screen and (max-width: 1200px) {
-  /* line 157, ../scss/layout/_homepage.scss */
+  /* line 163, ../scss/layout/_homepage.scss */
   .content-box h4 {
     font-size: 1.5em;
     line-height: 2em;
   }
 }
-/* line 166, ../scss/layout/_homepage.scss */
+/* line 172, ../scss/layout/_homepage.scss */
 .content-box h5, .content-box h6 {
   font-size: 1.25em;
   line-height: 1.2em;
   line-height: 1.7em;
 }
-/* line 170, ../scss/layout/_homepage.scss */
+/* line 176, ../scss/layout/_homepage.scss */
 .content-box h6, .content-box p {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
-/* line 173, ../scss/layout/_homepage.scss */
+/* line 179, ../scss/layout/_homepage.scss */
 .content-box li {
   text-align: left;
 }
 @media screen and (max-width: 986px) {
-  /* line 173, ../scss/layout/_homepage.scss */
+  /* line 179, ../scss/layout/_homepage.scss */
   .content-box li {
     text-align: center;
   }
 }
-/* line 179, ../scss/layout/_homepage.scss */
+/* line 185, ../scss/layout/_homepage.scss */
 .content-box p {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -462,14 +469,9 @@ body {
   line-height: 1.7em;
 }
 
-/* line 189, ../scss/layout/_homepage.scss */
+/* line 195, ../scss/layout/_homepage.scss */
 .home-page-1 h3, .home-page-1 a, .home-page-1 p {
   margin: 20px 0;
-}
-/* line 193, ../scss/layout/_homepage.scss */
-.home-page-1 .headshot img {
-  border-radius: 50%;
-  width: 200px;
 }
 
 /* line 200, ../scss/layout/_homepage.scss */
@@ -484,17 +486,37 @@ body {
 }
 
 /* line 208, ../scss/layout/_homepage.scss */
+.about-me h3 {
+  font-size: 1.3em;
+}
+/* line 211, ../scss/layout/_homepage.scss */
+.about-me h6 {
+  font-size: 1.1em;
+}
+
+/* line 216, ../scss/layout/_homepage.scss */
+span.em {
+  font-weight: 700;
+}
+
+/* line 221, ../scss/layout/_homepage.scss */
 .content-list li, .content-list a {
   margin: 20px 0;
 }
-/* line 211, ../scss/layout/_homepage.scss */
+/* line 224, ../scss/layout/_homepage.scss */
 .content-list li {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1.375em;
   line-height: 2.18182em;
 }
 
-/* line 220, ../scss/layout/_homepage.scss */
+/* line 233, ../scss/layout/_homepage.scss */
+.headshot img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+/* line 242, ../scss/layout/_homepage.scss */
 .contact-box {
   min-height: 60vh;
   border-top-left-radius: 15px;
@@ -503,7 +525,7 @@ body {
   padding: 20px 50px;
   background-color: #0D47A1;
 }
-/* line 227, ../scss/layout/_homepage.scss */
+/* line 249, ../scss/layout/_homepage.scss */
 .contact-box h4 {
   text-align: center;
   font-size: 2em;
@@ -511,11 +533,11 @@ body {
   color: #BBDEFB;
   padding-bottom: 10px;
 }
-/* line 233, ../scss/layout/_homepage.scss */
+/* line 255, ../scss/layout/_homepage.scss */
 .contact-box p {
   color: white;
 }
-/* line 236, ../scss/layout/_homepage.scss */
+/* line 258, ../scss/layout/_homepage.scss */
 .contact-box label {
   font-size: 1.125em;
   line-height: 1.33333em;
